@@ -1,32 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/form.css"/>
         <title>Добавление контактов</title>
     </head>
     <body>
-        
-        <form>
-            <div>
-                <label for="name">Имя</label>
-                <input type="text" id="name">
+        <div class="panel">
+            <div class="panel-header">
+            <div class="panel-header_label">Добавить контакт</div>
+            <div class="panel-header_button_cancel">
+                <button><img src="../img/cancel.svg" alt="" /></button>
             </div>
-            <div>
-                <label for="fname">Фамилия</label>
-                <input type="text" id="fname">
-            </div>
-            <div>
-                <label for="phone">Телефон</label>
-                <input type="text" id="phone">
-            </div>
-        </form>
+        </div>
         
-        <button onclick="window.location.href = 'index.html'">
-            Отмена            
-        </button>
-        
-        <button onclick="window.location.href = 'index.html'">
-            Сохранить            
-        </button>
+    
+        <div class="panel-content">
+            <div class="container">
+                <form action="" class="form">
+                    <div class="field">
+                        <label for="fname">Имя</label>
+                        <input type="text" id="name" name="fname"/>
+                    </div>
+                    <div class="field">
+                        <label for="lname">Фамилия</label>
+                        <input type="text" id="fnalnameme" name="lname"/>
+                    </div>
+                    <div class="field">
+                        <label for="phone">Телефон</label>
+                        <input type="text" id="phone" name="phone"/>
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email"/>
+                    </div>
+                    <div>
+                        <label for="compN">Компания</label>
+                        <input type="text" id="compN" name="compN"/>
+                    </div>
+                    <div>
+                        <label for="jobT">Работа</label>
+                        <input type="text" id="jobT" name="jobT"/>
+                    </div>
+                </form>
+                
+                <div class="form_buttons">
+                <a href="./table.html"><button class="button_cancel">Отмена</button></a>
+                <a href="./table.html"><button class="button_save">Сохранить</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
         
     </body>
 </html>

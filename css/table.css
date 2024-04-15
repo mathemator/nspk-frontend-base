@@ -6,22 +6,21 @@ table {
 
 .contacts_table {
     height: calc(100% - 144px);
-    padding: 24px 70px;
+    padding: 32px 70px;
 }
 
 tr {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #DCDCDC;
 }
 
 th {
     text-align: left;
-    padding: 20px;
+    padding: 12px 24px;
     font-weight: 900;
-
 }
 
 td {
-    padding: 20px;
+    padding: 12px 24px;
 }
 
 .tabs-data {
