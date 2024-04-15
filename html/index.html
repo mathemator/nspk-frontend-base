@@ -1,23 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../css/reset-style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap@"
+        rel="stylesheet"/>
+        <link rel="icon" href="http://example.con/favicon.png"/>
+        <link rel="icon" href="../img/Group_10.png""/>
         <title>Книга контактов</title>
     </head>
     <body>
-        <h1>Контакты</h1>
-        <p>(0 контактов)</p>
+        <header class="head">
+            <div class="contacts_head">
+                <span class="contacts_label">Контакты</span>
+                <span class="contacts_count">(0 контактов)</span>
+            </div>
+        </header>
         
-        <hr>
-        <a href="table.html">Контакты</a>
-        <a href="index.html">Избранное</a>
-        <hr>
+        <hr />
+        <div class="tabs-container">
+            <div class="tabs-data">
+                <div class="tabs">
+                    <a href="table.html">Контакты</a>
+                    <a href="index.html">Избранное</a>
+                </div>
+            </div>
+        </div>
+        <hr />
         
-        <img src="../img/cat_pic.svg"
-        
-        <p>Нет контактов</p>
-        
-        <button onclick="window.location.href = 'form.html'">
-            + Добавить новый контакт            
-        </button>
+        <div class="contacts">
+            <div>
+                <div>
+                    <img src="../img/emptyContacts.svg"/>
+                </div>
+                <div class="contacts_info">
+                    <div class="contacts_empty-text">Нет контактов</div>
+                    <div class="contacts_empty-button mt-12">
+                        <a href="./form.html"> <button> + Добавить новый контакт</button> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
