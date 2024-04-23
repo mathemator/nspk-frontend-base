@@ -42,12 +42,6 @@ body {
     height: 30px;
 }
 
-.tabs-data {
-    margin: 0 70px;
-    align-items: center;
-    display: flex;
-}
-
 .contacts {
     height: calc(100% - 144px);
     display: flex;

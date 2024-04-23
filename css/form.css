@@ -5,65 +5,61 @@
     align-items: center;
 }
 
-
 form {
     width: 100%;
 }
 
 .row {
     width: 100%;
-
 }
 
 .form_buttons {
+    display: flex;
+    justify-content: end;
+    width: 100%;
     margin-top: 24px;
-    float: right;
 }
 
 .form_buttons .button_save {
-    margin-top: 12px;
-    width: 152px;
-    padding: 8px;
-    padding-right: 0;
-    background-color: #5555A8;
     color: white;
+    font-weight: 600;
+    padding: 8px 20px;
+    border: 1px solid #5555A8;
     border-radius: 10px;
-    border-color: #5555A8;
-    border-width: 0px;
+    margin-right: 16px;
     cursor: pointer;
+    
+    background-color: #5555A8;
+    
 }
 
 .form_buttons .button_cancel {
-    width: 75px;
-    text-align: center;
-    padding: 8px;
     color: #5555A8;
-    background-color: white;
+    font-weight: 600;
+    padding: 8px 20px;
+    border: 1px solid #5555A8;
     border-radius: 10px;
-    border: 1px solid;
-    border-color: #5555A8;
+    margin-right: 16px;
     cursor: pointer;
 }
 
 form label {
     font-size: 16px;
-    margin: 12px 0;
-    font-weight: 500;
+    margin-bottom: 8px;
+    font-weight: 600;
+    line-height: 18px;
     color: #9F9F9F;
+    display: inline-block;
 }
 
 form input {
-    margin-top: 8px;
     width: 100%;
-    padding: 8px;
-    border-width: 1px;
-    border-color: #DCDCDC80;
-    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    border: 1.5px solid #DCDCDC;
+    border-radius: 4px;
     box-sizing: border-box;
-}
-
-form .field {
-    padding: 16px 0;
+    font-size: 16px;
 }
 
 textarea:focus,
@@ -73,29 +69,30 @@ input:focus {
 
 .panel {
     margin-top: 70px;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 1px solid;
-    width: 600px;
+    width: 617px;
     height: 100%;
 }
 
 .panel-header {
-    width: 600px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    background-color: #5555A8;
+    width: 617px;
+    border-radius: 10px 10px 0px 0px;
+    background: #5555A8;
     display: flex;
-    height: 80px;
+    height: 93px;
     justify-content: space-between;
 }
 
 .panel-content {
     padding: 32px;
+    background-color: #FFFFFF
 }
 
 .panel-header_label {
+    font-weight: 700;
     color: white;
-    padding: 24px;
+    padding: 32px;
     font-size: 24px;
 }
 
@@ -105,10 +102,9 @@ input:focus {
 }
 
 .panel-header_button_cancel button {
-    background-color: inherit;
-    border-width: 0;
-    margin-top: 8px;
-    margin-right: 8px;
+    background-color: transparent;
+    padding: 32px;
+    border: none;
     cursor: pointer;
 }
 
@@ -116,9 +112,6 @@ input:focus {
     width: 600px;
 }
 
-.form-edit_buttons {
-    float: left;
-}
 
 .form-edit_buttons .button_edit {
     margin-top: 12px;
@@ -132,32 +125,7 @@ input:focus {
     cursor: pointer;
 }
 
-.form-edit_buttons .button_back {
-    width: 80px;
-    text-align: center;
-    margin-right: 12px;
-    padding: 8px;
-    color: #5555A8;
-    background-color: white;
-    border-radius: 10px;
-    border: 1px solid;
-    border-color: #5555A8;
-    cursor: pointer;
-}
 
-.form-edit input {
-    border: 0;
-    border-bottom: 1px solid #000;
-    border-radius: 0;
-}
-
-.edit-contact {
-    font-size: 20px;
-    font-weight: 700;
-    color: #5555A8;
-}
-
-.edit-content {
-    margin-left: 70px;
-    margin-top: 70px;
+body {
+    background-color: #000000
 }
