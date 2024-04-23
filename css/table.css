@@ -4,6 +4,11 @@ table {
     color: #000070;
 }
 
+.tabs-container {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
 .contacts_table {
     height: calc(100% - 144px);
     padding: 32px 70px;
