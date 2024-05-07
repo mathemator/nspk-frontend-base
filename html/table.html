@@ -4,12 +4,15 @@
         <link rel="stylesheet" href="../css/style.css"/>
         <link rel="stylesheet" href="../css/table.css"/>
         <link rel="stylesheet" href="../css/reset-style.css"/>
+        <link rel="stylesheet" href="../css/modal.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap@"
         rel="stylesheet"/>
         <title>Книга контактов</title>.
         <script src="../js/table.js"></script>
+        <script src="../js/make-creation-form.js"></script>
+        <script src="../js/modal.js"></script>
     </head>
     <body>
         <header class="head">
@@ -27,7 +30,16 @@
                     <a href="index.html">Избранное</a>
                 </div>
                 <div class="contacts_empty-button">
-                    <a href="./form.html"> <button> + Добавить новый контакт</button> </a>
+                    <!-- <a href="./form.html">  -->
+                    <button> + Добавить новый контакт</button>
+                    <script> 
+                    Modal.content = makeCreationForm();
+                    document.querySelector(".contacts_empty-button")
+                    .addEventListener('click', e => {
+                        Modal.init("content");
+                        });
+                        </script>
+                     <!-- </a> -->
                 </div>
             </div>
         </div>
