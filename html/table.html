@@ -33,10 +33,11 @@
                     <!-- <a href="./form.html">  -->
                     <button> + Добавить новый контакт</button>
                     <script> 
-                    Modal.content = makeCreationForm();
+
                     document.querySelector(".contacts_empty-button")
                     .addEventListener('click', e => {
-                        Modal.init("content");
+                        Modal.init({content: makeCreationForm(),
+                        });
                         });
                         </script>
                      <!-- </a> -->
@@ -45,7 +46,7 @@
         </div>
         <hr />
         
-        <table>
+        <table id="contacts_table">
             <thead>
                 <tr>
                     <th>Имя</th>
@@ -54,21 +55,6 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Владимир</td>
-                    <td>Маненков</td>
-                    <td>+7977 1234567</td>
-                </tr>
-                <tr>
-                    <td>Джон</td>
-                    <td>Рэмбо</td>
-                    <td>+7977 7654321</td>
-                </tr>
-                <tr>
-                    <td>Гоппе</td>
-                    <td>Александр</td>
-                    <td>+7977 228 3300</td>
-                </tr>
             </tbody>
         </table>
     </body>

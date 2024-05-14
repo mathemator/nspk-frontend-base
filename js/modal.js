@@ -142,14 +142,13 @@ const Modal = {
         this.overlay.classList.add('modal-overlay_hidden');
 
         setTimeout(() => {
-
+            this.overlay.remove();
+            this.modalContainer.remove();
         }, 200);
 
         if (type === 'submit') {
             this.submitFunction();
         }
-        this.overlay.remove();
-        this.modalContainer.remove();
     },
 
     removeEventListeners() {
