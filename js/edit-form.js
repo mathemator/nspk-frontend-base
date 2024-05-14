@@ -1,3 +1,7 @@
+window.addEventListener("DOMContentLoaded", () => {
+    initFill();
+})
+
 const contact = {
     firstName: 'Александр',
     lastName: 'Гоппе',
@@ -7,10 +11,19 @@ const contact = {
     position: "разработчик"
 }
 
-console.log(contact.firstName + " " + 
-contact.lastName + " " +
-contact.phone + " " +
-contact["e-mail"] + " " +
-contact.company + " " +
-contact.position
-)
+function initFill() {
+    document.querySelector(".field #name").value = contact.firstName
+    document.querySelector(".field #lname").value = contact.lastName
+    document.querySelector(".field #phone").value = contact.phone
+    document.querySelector(".field #email").value = contact["e-mail"]
+    document.querySelector(".field #compN").value = contact.company
+    document.querySelector(".field #jobT").value = contact.position
+}
+
+// console.log(contact.firstName + " " + 
+// contact.lastName + " " +
+// contact.phone + " " +
+// contact["e-mail"] + " " +
+// contact.company + " " +
+// contact.position
+// )
