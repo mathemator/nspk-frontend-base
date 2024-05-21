@@ -1,0 +1,32 @@
+.tabs a {
+    color: #000070;
+    margin: 0 12px 0 0;
+    cursor: pointer;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.tabs-container {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.tabs-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts_empty-button button {
+    width: 250px;
+    padding: 8px;
+    background-color: #5555A8;
+    color: white;
+    border-radius: 10px;
+    border-color: #5555A8;
+    border-width: 0px;
+    cursor: pointer;
+}
