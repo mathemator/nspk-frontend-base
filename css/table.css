@@ -3,12 +3,6 @@ table {
     width: 100%;
     color: #000070;
 }
-
-.tabs-container {
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
 .contacts_table {
     height: calc(100% - 144px);
     padding: 32px 70px;
@@ -28,10 +22,6 @@ td {
     padding: 12px 24px;
 }
 
-.tabs-data {
-    display: flex;
-    justify-content: space-between;
-}
 
 .contacts_button_edit {
     text-align: right;
