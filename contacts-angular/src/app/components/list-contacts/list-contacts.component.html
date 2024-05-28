@@ -1,11 +1,27 @@
-<table id="contacts_table">
+<div class="contacts_table">
+<table>
     <thead>
         <tr>
             <th>Имя</th>
-            <th>Фамилия</th>
-            <th>Телефон</th>
+            <th>e-mail</th>
+            <th>телефон</th>
+            <th>сайт</th>
         </tr>
     </thead>
+    
     <tbody>
+        <tr *ngFor="let user of users">
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.website }}</td>
+        <td class="contacts_button_edit">
+            <div
+                style="background-color: none; cursor: poi8nter"
+                ><img src="../../../assets/img/edit.svg" alt =""
+            /></div>
+        </td>
+        </tr>
     </tbody>
 </table>
+</div>

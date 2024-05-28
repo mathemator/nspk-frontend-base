@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-add-form-contact',
@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrl: './add-form-contact.component.scss'
 })
 export class AddFormContactComponent {
-
+  @Output() namePage: EventEmitter<string> = new EventEmitter();
+  
+  
+  constructor() {
+  
+  }
+  
+  ngOnInit() {
+    this.namePage.emit('APP_EDIT_CONTACT');  
+  }
+  
+  public openPage(namePage: string) {
+    this.namePage.emit(namePage);
+  }
 }

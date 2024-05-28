@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { UsersService } from './../../services/users.service';
+
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-list-contacts',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class ListContactsComponent {
 
+  public users: any[] = this.usersService.getUsers()
+  
+  constructor(public usersService: UsersService) {
+    
+  }
+  
 }

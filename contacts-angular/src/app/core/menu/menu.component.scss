@@ -7,7 +7,7 @@
 .tabs {
     display: flex;
     align-items: center;
-    height: 30px;
+    height: 40px;
 }
 
 .tabs-container {
@@ -18,6 +18,21 @@
 .tabs-data {
     display: flex;
     justify-content: space-between;
+}
+
+.tabs-button {
+    width: 250px;
+    padding: 8px;
+    background-color: #5555A8;
+    color: white;
+    border-radius: 10px;
+    border-color: #5555A8;
+    border-width: 0px;
+    cursor: pointer;
+    margin: 5px; 
+    display: flex; /* Используем flexbox для вертикальной центровки */
+    align-items: center; /* Вертикальная центровка */
+    justify-content: center; /* Горизонтальная центровка */
 }
 
 .contacts_empty-button button {
