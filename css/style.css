@@ -36,6 +36,17 @@ body {
     cursor: pointer;
 }
 
+.tabs-container {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.tabs-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .tabs {
     display: flex;
     align-items: center;

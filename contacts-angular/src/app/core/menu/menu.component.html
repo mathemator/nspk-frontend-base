@@ -1,0 +1,25 @@
+<!-- <div class="tabs-container">
+    <div class="tabs-data">
+        <div class="tabs">
+            <a href="table.html">Контакты</a>
+            <a href="index.html">Избранное</a>
+        </div>
+        <div class="contacts_empty-button">
+            <a href="./form.html"> <button> + Добавить новый контакт</button> </a>
+        </div>
+    </div>
+</div> -->
+
+<div class="tabs-container">
+    <div class="tabs-data">
+        <div class="tabs">
+            <div class="tabs-button" (click)="openPage('APP_EDIT_CONTACT')">
+                Добавить контакт
+            </div>
+
+            <div class="tabs-button" (click)="openPage('LIST_CONTACT')">
+                Контакты {{ total }}
+            </div>
+        </div>
+    </div>
+</div>
