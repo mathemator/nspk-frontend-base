@@ -5,12 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeadComponent } from './core/head/head.component';
 import { MenuComponent } from './core/menu/menu.component';
-import { AddContactComponent } from './components/add-contact/add-contact.component';
-import { ContactsComponent } from './pages/contacts/contacts.component';
-import { AddFormContactComponent } from './components/add-form-contact/add-form-contact.component';
-import { ListContactsComponent } from './components/list-contacts/list-contacts.component';
-import { EditContactComponent } from './pages/contacts/edit-contact/edit-contact.component';
+import { AddContactComponent } from './pages/add-contact/add-contact.component';
+import { AddFormContactComponent } from './pages/add-contact/add-form-contact/add-form-contact.component';
+import { ListContactsComponent } from './pages/list-contacts/list-contacts.component';
+import { EditContactComponent } from './pages/list-contacts/edit-contact/edit-contact.component';
 import { UsersService } from './services/users.service';
+import { RoutingModule } from './routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,14 +19,15 @@ import { UsersService } from './services/users.service';
     HeadComponent,
     MenuComponent,
     AddContactComponent,
-    ContactsComponent,
     AddFormContactComponent,
     ListContactsComponent,
     EditContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RoutingModule,
+    ReactiveFormsModule
   ],
   providers: [UsersService],
   bootstrap: [AppComponent]

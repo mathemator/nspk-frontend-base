@@ -1,17 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { UsersService } from '../../services/users.service';
 
 @Component({
   selector: 'app-head',
   templateUrl: './head.component.html',
-  styleUrl: './head.component.scss'
+  styleUrl: './head.component.scss',
 })
-export class HeadComponent {
+export class HeadComponent implements OnInit {
+  public total: number;
 
-  total: number | undefined = this.usersService.totalUsers();
-  
-  constructor(public usersService: UsersService) {
-  
+  constructor(public usersService: UsersService) {}
+
+  ngOnInit(): void {
+    // setInterval(() => {
+    //   this.total = this.usersService.totalUsers();
+    // }, 1000);
   }
-  
 }
