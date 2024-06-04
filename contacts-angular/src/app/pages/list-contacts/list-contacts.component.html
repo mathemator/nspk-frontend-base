@@ -1,0 +1,27 @@
+<div class="contacts_table">
+<table>
+    <thead>
+        <tr>
+            <th>Имя</th>
+            <th>e-mail</th>
+            <th>телефон</th>
+            <th>сайт</th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        <tr *ngFor="let user of users">
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.website }}</td>
+        <td class="contacts_button_edit">
+            <div routerLink="/list-contacts/edit-contact/{{ user.id }}"
+                style="background-color: none; cursor: pointer"
+                ><img src="../../../assets/img/edit.svg" alt =""
+            /></div>
+        </td>
+        </tr>
+    </tbody>
+</table>
+</div>

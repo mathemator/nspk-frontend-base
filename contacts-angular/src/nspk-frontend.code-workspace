@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "nspk-frontend",
+			"path": "../.."
+		},
+		{
+			"name": "contacts",
+			"path": "../../../contacts"
+		}
+	],
+	"settings": {}
+}
